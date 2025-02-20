@@ -5,17 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:text="123456"
         android:background="@color/lightGray"
+        android:gravity="end|bottom"
         android:padding="10dp"
-        android:textSize="48sp"
-        android:gravity="end|bottom" />
+        android:textSize="48sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,52 +25,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:id="@+id/btnSeven"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="7"/>
+                android:text="@string/_7" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnEight"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="8"/>
+                android:text="@string/_8" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnNine"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="9"/>
+                android:text="@string/_9" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnDivide"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="onDigit"
-                android:text="/"/>
+                android:onClick="onOperator"
+                android:text="@string/divide" />
 
 
         </LinearLayout>
@@ -78,52 +74,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:id="@+id/btnFour"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="4"/>
+                android:text="@string/_4" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnFive"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="5"/>
+                android:text="@string/_5" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnSix"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="@string/_6"/>
+                android:text="@string/_6" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnMultiply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="onDigit"
-                android:text="*"/>
+                android:onClick="onOperator"
+                android:text="@string/multiply" />
 
 
         </LinearLayout>
@@ -131,52 +123,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:id="@+id/btnOne"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="1"/>
+                android:text="@string/_1" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnTwo"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="2"/>
+                android:text="@string/_2" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnThree"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="3"/>
+                android:text="@string/_3" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnMinus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="onDigit"
-                android:text="-"/>
+                android:onClick="onOperator"
+                android:text="@string/minus" />
 
 
         </LinearLayout>
@@ -184,41 +172,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:id="@+id/btnZero"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:onClick="onDigit"
-                android:text="0"/>
+                android:text="@string/_0" />
 
-            <TextView
+            <Button
+                android:id="@+id/btnDecimal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onDecimalPoint"
+                android:text="@string/decimal" />
+
+            <Button
                 android:id="@+id/btnClear"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="onDigit"
-                android:text="CLR"/>
+                android:onClick="onClear"
+                android:text="@string/clr" />
 
-            <TextView
+            <Button
                 android:id="@+id/btnPlus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="onDigit"
-                android:text="+"/>
+                android:onClick="onOperator"
+                android:text="@string/plus" />
 
 
         </LinearLayout>
@@ -226,19 +221,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:id="@+id/btnEqual"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="2dp"
-                android:background="@color/blue"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:onClick="onDigit"
-                android:text="="/>
+                android:onClick="onEqual"
+                android:text="@string/equals" />
 
         </LinearLayout>
 
